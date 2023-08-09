@@ -12,12 +12,10 @@ function App() {
     <div>
       <Header/>
       <Routes>
-        {/* <Route path="/products" element={<Products/>} /> */}
         <Route path = "/" element = {<Products/>}/>
         <Route path = "/products/:id" element = {<Product/>}/>
         <Route path="/categories/:name" element={<CategoryProducts/>} />
         <Route path="cart" element={<Cart/>} />
-        <Route path="*" element={<div>404</div>} />
       </Routes>
       <Footer/>
     </div>
